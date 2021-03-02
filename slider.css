@@ -1,0 +1,39 @@
+
+h1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+
+/*Reach*/
+.slidercontainer {
+  width: 300px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  outline: none;
+  width: 300px;
+  height: 15px;
+  background: #EDF3F8;
+  border-radius: 15px;
+}
+
+
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #56A0D3;
+  cursor: pointer;
+}

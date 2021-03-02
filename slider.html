@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+    <link href="slider.css" type="text/css" rel="stylesheet">
+    </head>
+
+  <body>
+
+<!--Payload-->
+    <h1>3. Payload </h1>
+    <div class="slidercontainer">
+      <p style="text-align:left;"> 3kg / 6.6lbs <span style="float:right;"> 16kg / 35.3lbs </span> </p>
+      <input type="range" min="3" max="16" value="3" id="payload" class="slider">
+      <p><span id="payloadkg"></span> kg </p>
+    </div>
+
+    <script>
+    var slider = document.getElementById("payload");
+    var output = document.getElementById("payloadkg");
+    output.innerHTML = slider.value;
+
+    slider.oninput = function() {
+      output.innerHTML = this.value;
+    }
+    </script>
+
+
+<!--Reach-->
+    <h1>4. Reach </h1>
+    <div class="slidercontainer">
+      <p style="text-align:left;"> 500mm / 19.7ins <span style="float:right;"> 1300mm / 51.2ins </span> </p>
+      <input type="range" min="500" max="1300" value="500" id="reach" class="slider">
+      <p><span id="reachmm"></span> mm </p>
+    </div>
+
+    <script>
+    var slider = document.getElementById("reach");
+    var output1 = document.getElementById("reachmm");
+    output1.innerHTML = slider.value;
+
+    slider.oninput = function() {
+      output1.innerHTML = this.value;
+    }
+    </script>
+
+  </body>
+</html>
